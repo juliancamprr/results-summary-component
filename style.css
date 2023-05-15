@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'hanken';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hanken bold';
+    src: url('/assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'hanken';
+}
+
+.card_content {
+    background-color: white;
+    display: flex;
+}
+
+.card_info {
+    width: 370px;
+    border-radius: 1.5em;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.primary_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+    font-size: 1.2em;
+    color: hsl(241, 100%, 89%)
+}
+
+.circle_info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.circle {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.circle .great h2 {
+    font-size: 4em;
+    color: white;
+}
+
+.circle .great p {
+    display: flex;
+    justify-content: center;
+    color: hsl(241, 100%, 89%);
+    font-family: 'hanken bold';
+}
+
+.other_info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.other_info h1 {
+    margin-top: 1em;
+}
+
+.other_info p {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    width: 14em;
+    margin: 1em 4em 3em;
+}
+
+/* SEGUNDO CARD ========================================================================= */
+
+.card_summary {
+    width: 370px;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    /* box-shadow: 5px 5px 15px rgb(117, 117, 117); */
+}
+
+.second_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.second_card h3 {
+    width: 80%;
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+.mini_card_emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.mini_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px;
+    padding: 1em;
+    font-family: 'hanken bold';
+}
+
+.reaction h5 {
+    display: flex;
+    color: hsl(0, 100%, 67%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+.memory h5 {
+    display: flex;
+    color: hsl(39, 100%, 56%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+
+.verbal h5 {
+    display: flex;
+    color: hsl(166, 100%, 37%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+.visual h5 {
+    display: flex;
+    color: hsl(234, 85%, 45%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+.reaction {
+    width: 80%;
+    background-color: hsl(0, 100%, 97%);
+    border-radius: 10px;
+}
+.memory {
+    width: 80%;
+    background-color: hsl(39, 100%, 93%);;
+    border-radius: 10px;
+}
+.verbal {
+    width: 80%;
+    background-color: hsl(165, 100%, 98%);
+    border-radius: 10px;
+}
+.visual {
+    width: 80%;
+    background-color: hsl(231, 100%, 97%);
+    border-radius: 10px;
+}
+
+.continue_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+button {
+    font-family: 'hanken bold';
+    width: 80%;
+    border-radius: 20px;
+    padding: 1em;
+    background-color: hsl(234, 85%, 45%);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+}
+
+span {
+    color: hsl(0, 0%, 67%)
+}
+
+@media (max-width: 600px) {
+    body {
+        height: auto;
+    }
+    .card_content {
+        flex-direction: row;
+        width: min-content;
+        flex-wrap: wrap;
+    }
+}
